@@ -1,0 +1,30 @@
+// src/styles/_buttons.scss
+
+.btn-main {
+    background-color: map-get($custom-colors, "primary");
+    color: white;
+    border: none;
+  
+    &:hover {
+      background-color: darken(map-get($custom-colors, "primary"), 10%);
+    }
+  }
+  
+  .btn-gold {
+    background-color: map-get($custom-colors, "gold");
+    color: map-get($custom-colors, "primary");
+  
+    &:hover {
+      background-color: darken(map-get($custom-colors, "gold"), 10%);
+    }
+  }
+  
+  .btn-slate {
+    background-color: map-get($custom-colors, "secondary");
+    color: white;
+  
+    &:hover {
+      background-color: darken(map-get($custom-colors, "secondary"), 10%);
+    }
+  }
+  

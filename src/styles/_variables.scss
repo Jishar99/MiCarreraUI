@@ -1,0 +1,31 @@
+// Define el mapa de colores personalizado
+$custom-colors: (
+  "primary": #191970,
+  "secondary": #6A5ACD,
+  "success": #32CD32,
+  "danger": #FF6347,
+  "warning": #FFD700,
+  "info": #87CEEB,
+  "light": #F8F9FA,
+  "dark": #343A40
+);
+
+// También puedes sobrescribir los colores de Bootstrap (opcional)
+$theme-colors: map-merge(
+  (
+    "primary": map-get($custom-colors, "primary"),
+    "secondary": map-get($custom-colors, "secondary"),
+    "success": map-get($custom-colors, "success"),
+    "info": map-get($custom-colors, "info"),
+    "warning": map-get($custom-colors, "warning"),
+    "danger": map-get($custom-colors, "danger"),
+    "light": map-get($custom-colors, "light"),
+    "dark": map-get($custom-colors, "dark")
+  ),
+  ()
+);
+
+$navbar-dark-color: white;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: white;
+

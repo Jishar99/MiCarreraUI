@@ -1,0 +1,17 @@
+// src/styles/_typography.scss
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $body-color;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+    color: map-get($custom-colors, "primary");
+  }
+  
+  .text-highlight {
+    color: map-get($custom-colors, "gold");
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables'; // Primero tus variables personalizadas
+
+// Aquí ya puedes usar $custom-colors sin problema
+.my-custom-button {
+  background-color: map-get($custom-colors, "primary");
+  color: white;
+}
+
+// Luego Bootstrap, para que tome tus $theme-colors
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
