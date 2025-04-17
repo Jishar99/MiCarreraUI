@@ -7,6 +7,18 @@
   color: white;
 }
 
+
+body {
+  background-color: $body-background !important; // si usaste variable
+  // O directamente sin variable:
+  // background-color: #fbfcfc;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; // opcional
+}
+
+
 // Luego Bootstrap, para que tome tus $theme-colors
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "@ng-select/ng-select/themes/default.theme.css";
